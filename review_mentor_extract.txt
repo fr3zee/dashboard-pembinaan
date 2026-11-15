@@ -1,0 +1,241 @@
+
+REVIEW KOMPREHENSIF LAPORAN PROYEK KEPADA MENTOR
+Analisis mendalam, Dokumentasi Kronologis, Evaluasi Interface & Matrix Action Plan Pengembangan Sistem Monitoring & Evaluasi Pembinaan Srikandi
+Nama File Audio Utama
+2026-10-19_13'53'58'.mp3
+Tanggal & Waktu Sesi
+19 Oktober 2026 (~13:53 WIB)
+Partisipan Pembicaraan
+Naufal Hilmi Fathul Ihsan (Pengembang) & Mentor Sistem (Penguji/Evaluator)
+Objek Review & Proyek
+Prototype UI/UX & Sistem Aplikasi Pemantauan & Evaluasi Pembinaan Srikandi
+Tujuan Dokumentasi
+Menghasilkan spesifikasi revisi, analisis kebutuhan, dan daftar tindak lanjut pengembangan
+
+Bab I: Gambaran Umum Pertemuan dan Konteks Laporan Proyek
+1.1 Latar Belakang & Ruang Lingkup Sistem
+Pertemuan laporan proyek ini berfokus pada evaluasi dan tinjauan komprehensif terhadap prototype Sistem Informasi Pemantauan dan Evaluasi Kegiatan Pembinaan Srikandi. Sistem ini dirancang untuk mencatat, mengelola, menganalisis, serta menyajikan data rekapitulasi kegiatan pembinaan, sosialisasi, bimbingan teknis (bimtek), pendampingan teknis, dan konsultasi yang dilaksanakan bagi berbagai instansi pemerintah di Indonesia, meliputi Kementerian, Lembaga Pemerintah Non-Departemen (LPPND), Pemerintah Daerah (Pemda), hingga Perguruan Tinggi/Universitas.
+1.2 Tujuan Diskusi dan Maksud Peninjauan Audio
+Tujuan utama dari sesi tatap muka antara pengembang (Naufal Hilmi Fathul Ihsan) dan Mentor Sistem adalah:
+•  Mendemonstrasikan rancangan antarmuka (UI/UX) dan alur kerja (workflow) prototype aplikasi yang telah dikembangkan.
+•  Menguji keselarasan antarmuka dan terminologi sistem dengan standar tata kelola birokrasi dan kebutuhan operasional instansi.
+•  Mendapatkan umpan balik, masukan, evaluasi, serta arahan koreksi spesifik dari mentor sebelum sistem masuk ke tahap integrasi database dan backend.
+•  Menyelesaikan administrasi penilaian kinerja magang pengembang pada portal magang institusi.
+1.3 Metode Analisis Rekaman
+Dokumentasi dalam laporan Word ini disusun berdasarkan analisis audio secara kronologis dari menit awal hingga akhir. Setiap pembahasan diuraikan tanpa ada detail yang terlewat, memisahkan secara tegas antara poin yang dilaporkan pengembang, pandangan dan arahan mentor, keputusan akhir yang disepakati, serta item pekerjaan yang harus ditindaklanjuti.
+Bab II: Review Lengkap Pembicaraan Secara Kronologis
+2.1 Fase 1: Persiapan Teknis Proyeksi & Koordinasi Awal (00:00 - 02:15)
+Sesi dimulai dengan persiapan teknis perangkat presentasi. Naufal meminta izin kepada mentor untuk memproyeksikan layar laptopnya ke layar monitor utama mentor agar tampilan antarmuka aplikasi dapat ditinjau secara bersama-sama. Proses koneksi HDMI/DisplayPort disesuaikan hingga tampilan berhasil muncul dengan sempurna.
+Di sela-sela penyiapan layar, terjadi pembicaraan koordinasi administratif singkat:
+•  Diskusi mengenai ketersediaan dan pengiriman undangan untuk 'Mas Wahyu'.
+•  Penegasan dari mentor agar tugas terkait pengalihan berkas atau persiapan bimbingan teknis (bimtek) diselesaikan terlebih dahulu.
+•  Mentor memastikan bahwa seluruh perangkat presentasi dan konektor telah terhubung dengan stabil sebelum memasuki peninjauan modul aplikasi.
+2.2 Fase 2: Tinjauan Executive Dashboard & Metrik Utama (02:15 - 05:45)
+Naufal mulai mendemonstrasikan halaman Dashboard Utama yang memuat ringkasan rekapitulasi data pembinaan dan distribusi layanan. Pada rancangan awal Naufal, data pembinaan dikelompokkan berdasarkan periode kuartal dengan istilah 'Q1, Q2, Q3, Q4'.
+Mentor memberikan evaluasi dan arahan koreksi mendasar terkait terminologi dan tata letak metrik:
+•  Nomenklatur Periode: Penggunaan istilah 'Q1, Q2, Q3' ditolak keras oleh mentor karena tidak umum dalam sistem administrasi pemerintahan. Mentor menginstruksikan untuk menggantinya secara mutlak menjadi 'Triwulan 1 (TW1), Triwulan 2 (TW2), Triwulan 3 (TW3), Triwulan 4 (TW4)'.
+•  Urutan Penyajian Metrik: Mentor mengarahkan agar statistik tidak langsung menampilkan detail triwulan, melainkan wajib menampilkan Akumulasi Total Per Tahun di posisi paling atas, kemudian baru dapat di-expand atau diurutkan berdasarkan Triwulan 1 hingga Triwulan 4.
+•  Redefinisi Metrik 'Instansi Unik': Naufal memasukkan label 'Instansi Unik'. Mentor menilai istilah ini membingungkan bagi pejabat pimpinan. Mentor meminta kata 'Unik' dihapus dan diganti menjadi 'Total Instansi'. Mentor menjelaskan alasannya: satu instansi bisa menerima pembinaan berulang kali dalam setahun, sehingga pimpinan memerlukan dua metrik terpisah: (1) Total Frekuensi Pembinaan, dan (2) Total Instansi yang Terjangkau.
+•  Penyederhanaan Metrik Narasumber: Label terkait narasumber dirapikan menjadi 'Total Narasumber'.
+•  Pembaruan Judul Seksi: Judul seksi awal 'Ringkasan Pembinaan' diubah secara spesifik menjadi 'Pemantauan Data Kegiatan Pembinaan Srikandi'.
+2.3 Fase 3: Visualisasi Grafik, Palet Warna & Standardisasi Estetika (05:45 - 08:45)
+Naufal melanjutkan pemaparan pada komponen grafik donut yang menampilkan kategori layanan serta grafik tren harian, sekaligus menanyakan apakah grafik perlu dilengkapi fitur ekspor langsung ke Excel.
+Mentor memberikan instruksi perombakan visualisasi data yang sangat terinci:
+•  Koreksi Judul Grafik Donuts: Label 'Distribusi Layanan' harus diganti menjadi 'Proporsi Layanan Berdasarkan Jenis Layanan'.
+•  Standar Penulisan Legenda Grafik: Penulisan nama dan jumlah data pada legenda dibalik. Angka jumlah harus diletakkan di DEPAN nama kegiatan agar mata pembaca langsung menangkap kuantitas data. Contoh arahan mentor: '6 Sosialisasi Srikandi' (BUKAN 'Sosialisasi Srikandi: 6').
+•  Ketentuan Palet Warna Wajib (6 Warna): Mentor menetapkan 6 warna resmi yang boleh digunakan untuk membedakan jenis layanan pada grafik, yaitu: Biru Dongker, Biru Tosca, Kuning, Hijau, Ungu, dan Oranye.
+•  LARANGAN WARNA MERAH: Mentor menegaskan dengan sangat eksplisit untuk MENGHINDARI WARNA MERAH pada grafik pembinaan, karena warna merah memberikan persepsi psikologis negatif (kegagalan/bahaya) pada laporan eksekutif pimpinan.
+•  Grafik Pembinaan Tahunan & Filter: Judul 'Grafik Pembacaan Harian' diganti menjadi 'Grafik Pembinaan Srikandi Tahun [Tahun Berjalan]'. Grafik ini wajib dilengkapi Dropdown Filter Tahun (contoh opsi: 2024, 2025, 2026) yang secara dinamis mengubah grafik per bulan (Januari - Desember) sesuai tahun yang dipilih.
+•  Visualisasi Peta Indonesia: Mentor meminta ditambahkan komponen visual 'Peta Indonesia' di dashboard untuk memetakan distribusi lokasi instansi yang telah dibina secara geografis.
+•  Penundaan Ekspor Grafik: Fitur ekspor grafik ke format Excel diputuskan untuk ditunda terlebih dahulu agar pengembang fokus pada penyempurnaan UI dan agregasi data.
+📌 Ketentuan Standar Visual & Palet Warna Sesuai Arahan Mentor
+✅ 6 Warna Resmi Disetujui: Biru Dongker, Biru Tosca, Kuning, Hijau, Ungu, Oranye.
+❌ Larangan Keras: Warna Merah dilarang digunakan pada komponen grafik pembinaan.
+📊 Format Legenda: Angka di posisi depan (misal: '6 Sosialisasi Srikandi').
+🗺️ Komponen Baru: Peta Persebaran Wilayah Indonesia di area bawah dashboard.
+
+2.4 Fase 4: Perombakan Struktur Form 'Tambah Data Pembinaan' (08:45 - 12:45)
+Naufal memperlihatkan formulir penginputan data kegiatan pembinaan baru dan menanyakan mekanisme pendaftaran narasumber serta tim pendamping internal.
+Mentor melakukan re-layout struktur form secara menyeluruh agar alur pengisian logis dan teratur:
+•  Posisi Kategori Instansi di Paling Atas: Form wajib diawali dengan Dropdown 'Kategori Instansi' di urutan paling atas. Pilihan opsi kategori mengacu pada standar Helpdesk, yaitu: Kementerian, LPPND, Pemerintah Daerah, Universitas/Lainnya.
+•  Urutan Field Form Utama: Setelah Kategori Instansi dipilih, alur field secara berurutan adalah: (1) Nama Instansi (autocomplete/dropdown dari data master, misal 'Mahkamah Agung'), (2) Satker / Unit Kerja (input teks/pilihan), (3) Tanggal Pelaksanaan (Tanggal Mulai s.d. Tanggal Selesai, contoh: 15 Oktober), (4) Metode Pelaksanaan (Dropdown: Daring, Luring, atau Daring & Luring).
+•  Penggabungan Field Tempat & URL: Field 'Tempat Pelaksanaan' dan 'URL Rapat Daring' dilebur menjadi satu field fleksibel bernomer: 'Nama Lokasi atau Tempat Rapat Daring' (dapat diisi lokasi fisik seperti 'Lt. 3 Gedung A' atau identitas daring seperti 'Zoom Meeting ID').
+•  Fitur Tim Pendamping Dinamis: Untuk mengisi narasumber atau tim pendamping internal, disediakan modul pencarian nama pegawai berbasis Data Master dengan tombol '+ Tambah Anggota'. Hal ini memungkinkan Admin menambah lebih dari satu orang pendamping secara dinamis tanpa penulisan manual yang berpotensi salah.
+•  Relokasi Box 'Catatan Hasil Pembinaan': Field 'Integrasi' diubah namanya menjadi 'Catatan Hasil Pembinaan'. Layout form diubah: kotak catatan ini ditempatkan di pojok/samping dengan area teks luas agar tidak memotong alur form ke bawah.
+•  Status Visual Indikator Upload: File laporan/materi yang belum diunggah akan ditandai dengan warna MERAH, dan otomatis berubah menjadi BIRU setelah berkas berhasil diunggah.
+2.5 Fase 5: Katalog Laporan, Katalog Materi & Master Data User (12:45 - 15:45)
+Naufal memperlihatkan rancangan Katalog Laporan dan Katalog Materi, serta mengajukan pertanyaan terkait kebutuhan fitur Tanda Tangan Elektronik (TTE), fitur manajemen akun pengguna, dan formulir pencatatan tamu.
+Mentor memberikan keputusan dan spesifikasi kebutuhan fitur pendukung:
+•  Penegasan TTE (Tanda Tangan Elektronik): Mentor menegaskan bahwa aplikasi pemantauan ini TIDAK MEMERLUKAN TTE, karena pengesahan dan TTE laporan resmi sudah sepenuhnya dikelola melalui aplikasi Srikandi utama.
+•  Status Dokumen Laporan: Katalog Laporan harus menampilkan badge status dokumen yang jelas, seperti 'Tahap Persiapan' atau 'Selesai'.
+•  Pengaturan Visibilitas Materi (Publikasi vs Private): Pada Katalog Materi, setiap berkas yang diunggah wajib memiliki Opsi Visibilitas: 'Publikasi' (dapat diakses/diunduh oleh seluruh user) atau 'Private / Privat' (hanya internal). Jika materi berstatus Private diakses user umum, sistem menampilkan notifikasi: 'Materi bersifat privat, silakan hubungi narasumber bersangkutan'.
+•  Penyediaan Menu Data Master: Mentor menyetujui usulan Naufal untuk membuat menu 'Data Master' di sisi Admin yang mencakup: Master Instansi, Master Kategori Instansi, dan Master Pegawai/Narasumber.
+•  Komponen Klasemen / Top Narasumber: Ditambahkan komponen 'Klasemen Narasumber Pembinaan' yang menampilkan Foto Profil Pegawai, Nama Lengkap, NIP, serta Total Frekuensi Pembinaan yang telah dilaksanakan.
+•  Manajemen Profil Pengguna: Header aplikasi dilengkapi foto profil user yang terhubung ke menu 'Pengaturan Akun' (memuat Nama Lengkap, NIP, Email, Nomor Telepon, dan Upload Foto).
+•  Sub-Menu Manajemen Tamu: Untuk pencatatan tamu kunjungan/konsultasi, sistem tidak menggunakan form permohonan mandiri oleh tamu, melainkan menyediakan sub-menu 'Tamu Kunjungan' / 'Tamu Konsultasi' yang di-input manual oleh Admin.
+2.6 Fase 6: Evaluasi Penilaian Magang Naufal & Penutup (15:45 - Selesai)
+Setelah seluruh modul aplikasi selesai ditinjau, alur pembicaraan beralih ke pembahasan administrasi magang Naufal. Naufal memohon kesediaan mentor untuk mengisi formulir penilaian kinerja magangnya pada portal magang institusi, mengingat mentor lain telah menyelesaikan penilaian bagi mahasiswa bimbingannya.
+Proses evaluasi berlangsung secara langsung dan transparan:
+•  Mentor membuka portal magang dan mengakses borang penilaian kinerja Naufal saat sesi berlangsung.
+•  Mentor mendapati adanya validasi sistem yang mengharuskan pengisian kolom catatan evaluasi minimal 20 karakter.
+•  Mentor memberikan penilaian kinerja dengan predikat 'Sangat Baik' serta menuliskan apresiasi atas dedikasi, inisiatif, dan kecepatan adaptasi Naufal dalam mengembangkan aplikasi.
+•  Sesi ditutup dengan ucapan terima kasih dari Naufal, candaan ringan mengenai pencairan gajia/insentif magang pertama ('Gajian pertama ini, Pak/Mbak!'), dan tawa keakraban antara mentor dan pengembang.
+Bab III: Pemaparan Laporan Proyek yang Disampaikan Pengembang
+Dalam sesi laporan ini, Naufal Hilmi Fathul Ihsan menyampaikan beberapa poin penting terkait kemajuan proyek dan usulan teknis:
+3.1 Demonstrasi Prototype UI/UX
+Naufal memperlihatkan rancangan antarmuka visual untuk Dashboard Utama, Form Tambah Data Pembinaan, Katalog Laporan, Katalog Materi, dan Rekapitulasi Data.
+3.2 Pengelompokan Data Pembinaan
+Naufal memaparkan struktur awal rekapitulasi data yang dipilah berdasarkan periode kuartal (Q1, Q2, Q3) serta menyajikan grafik distribusi jenis layanan.
+3.3 Pengembangan Form Input
+Naufal mendemonstrasikan form input kegiatan pembinaan dan mengajukan pertanyaan mengenai cara terbaik mengorganisasi narasumber dan tim pendamping internal.
+3.4 Usulan Fitur Data Master & Profiling
+Naufal secara aktif mengusulkan adanya pendaftaran Data Master Instansi dan fitur Manajemen Profil Pengguna lengkap dengan foto untuk kerapian data.
+3.5 Konsultasi Alur Birokrasi
+Naufal mengonsultasikan apakah laporan memerlukan verifikasi TTE dan bagaimana mekanisme pencatatan tamu kunjungan yang sesuai dengan kenyataan di lapangan.
+Bab IV: Tanggapan, Evaluasi, dan Arahan Mentor
+Mentor memberikan evaluasi kritis yang mencakup aspek tata kelola birokrasi, standar estetika laporan eksekutif, serta kemudahan penggunaan (usability):
+4.1 Penyesuaian Bahasa Administrasi Pemerintahan
+Mentor menekankan pentingnya menggunakan standar istilah yang berlaku di instansi pemerintah, seperti mengganti Kuartal menjadi Triwulan, dan menghapus kata 'Unik' dari metrik instansi agar tidak menimbulkan salah penafsiran bagi pimpinan.
+4.2 Penetapan Standar Visual & Aksesibilitas
+Mentor secara tegas menetapkan 6 warna resmi (Biru Dongker, Biru Tosca, Kuning, Hijau, Ungu, Oranye) dan MELARANG warna merah pada grafik. Legenda grafik diwajibkan diawali dengan angka untuk mempercepat pemahaman eksekutif.
+4.3 Penyederhanaan dan Fleksibilitas Form
+Mentor mengarahkan penggabungan field yang tumpang tindih (Tempat & URL Rapat Daring) serta menyediakan fitur penambahan anggota tim pendamping secara dinamis berbasis Data Master.
+4.4 Perlindungan Kerahasiaan Berkas
+Mentor menginstruksikan adanya Opsi Publikasi vs Private pada katalog materi untuk menjaga dokumen internal yang belum dapat dipublikasikan secara umum.
+Bab V: Rincian Koreksi, Revisi, dan Perubahan Spesifik
+Berikut adalah rincian koreksi dan perubahan teknis yang wajib diterapkan pada setiap modul aplikasi:
+Modul 1: Executive Dashboard
+✔  Ganti semua label Q1, Q2, Q3, Q4 menjadi Triwulan 1, Triwulan 2, Triwulan 3, Triwulan 4.
+✔  Tampilkan metrik Akumulasi Total Per Tahun di posisi paling atas.
+✔  Ubah 'Instansi Unik' menjadi 'Total Instansi', dan 'Narasumber' menjadi 'Total Narasumber'.
+✔  Ubah judul seksi 'Ringkasan Pembinaan' menjadi 'Pemantauan Data Kegiatan Pembinaan Srikandi'.
+✔  Ubah judul grafik donuts menjadi 'Proporsi Layanan Berdasarkan Jenis Layanan'.
+✔  Ubah format legenda grafik: Angka diletakkan di depan (contoh: '6 Sosialisasi Srikandi').
+✔  Terapkan palet 6 warna resmi. HAPUS SEMUA WARNA MERAH pada grafik pembinaan.
+✔  Ubah 'Grafik Pembacaan Harian' menjadi 'Grafik Pembinaan Srikandi Tahun [X]' dengan Dropdown Filter Tahun.
+✔  Tambahkan komponen visual Peta Indonesia untuk pemetaan lokasi pembinaan.
+Modul 2: Form Input 'Tambah Data Pembinaan'
+✔  Pindahkan Dropdown 'Kategori Instansi' ke posisi urutan paling atas (Opsi: Kementerian, LPPND, Pemda, Universitas).
+✔  Atur urutan field: Kategori Instansi -> Nama Instansi (Master) -> Satker/Unit Kerja -> Tanggal Pelaksanaan -> Metode Pelaksanaan.
+✔  Lebur field Tempat & URL Rapat Daring menjadi: 'Nama Lokasi atau Tempat Rapat Daring'.
+✔  Sediakan fitur dinamis '+ Tambah Anggota' untuk memilih tim pendamping dari Data Master Pegawai.
+✔  Ganti label 'Integrasi' menjadi 'Catatan Hasil Pembinaan' dan tempatkan di posisi pojok/samping.
+✔  Terapkan indikator status warna upload: Merah (Belum Upload) -> Biru (Sudah Upload).
+Modul 3: Katalog Laporan & Katalog Materi
+✔  Hapus kebutuhan TTE (Tanda Tangan Elektronik) dari laporan.
+✔  Tambahkan badge indikator status dokumen: 'Tahap Persiapan' atau 'Selesai'.
+✔  Tambahkan toggle Visibilitas Materi: 'Publikasi' vs 'Private'.
+✔  Implementasikan pesan notifikasi untuk materi Private: 'Materi bersifat privat, silakan hubungi narasumber bersangkutan'.
+Modul 4: Master Data, User Profiling & Management Tamu
+✔  Buat modul 'Data Master' untuk mengelola Instansi, Kategori Instansi, dan Pegawai/Narasumber.
+✔  Tambahkan komponen 'Klasemen Narasumber' (Foto Profil, Nama, NIP, Total Pembinaan).
+✔  Tambahkan foto profil pengguna pada header dan halaman Pengaturan Akun.
+✔  Buat sub-menu 'Tamu Kunjungan' / 'Tamu Konsultasi' untuk pencatatan tamu manual oleh Admin.
+Bab VI: Keputusan, Kesepakatan, dan Hal yang Ditunda
+6.1 Matriks Keputusan Final Diskusi
+Item Pembahasan
+Keputusan / Kesepakatan Final
+Keterangan / Dasar Alasan
+Periode Laporan
+Wajib menggunakan istilah Triwulan 1 - 4 (TW1-TW4)
+Standardisasi birokrasi pemerintah; istilah Kuartal (Q1-Q4) dilarang.
+Penggunaan Warna
+Gunakan 6 warna disetujui; MERAH DILARANG KERAS
+Warna merah berasosiasi negatif/kegagalan pada laporan pimpinan.
+Fitur TTE Laporan
+TIDAK DIPERLUKAN dalam aplikasi pemantauan ini
+Proses legalitas TTE sudah dikelola penuh di aplikasi Srikandi utama.
+Pencatatan Tamu
+Di-input manual oleh Admin via sub-menu khusus
+Tamu tidak melakukan pendaftaran mandiri; diadministrasikan internal.
+Fitur Ekspor Grafik Excel
+DITUNDA untuk pengembangannya saat ini
+Fokus utama diberikan pada perbaikan UI/UX dan akurasi agregasi data.
+Hak Akses Materi
+Tersedia Opsi Publikasi dan Private
+Melindungi kerahasiaan materi internal yang belum siap dibagikan umum.
+
+Bab VII: Daftar Tindak Lanjut (Action Plan Matrix)
+Tabel berikut merangkum seluruh daftar pekerjaan teknis yang harus dilaksanakan oleh pengembang berdasarkan skala prioritas pengerjaan:
+No
+Modul / Area
+Arahan & Tugas Teknis
+Rincian Detail Implementasi
+Prioritas
+Status Target
+1
+Dashboard
+Revisi Nomenklatur Periode & Metrik
+Ganti Q1-Q3 jadi Triwulan 1-4; Hapus kata 'Unik' jadi 'Total Instansi'; Tambah Total Akumulasi Tahunan di paling atas.
+Tinggi (High)
+Sprint 1
+2
+Dashboard
+Redesign Grafik & Palet Warna
+Ubah judul 'Proporsi Layanan'; Format legenda 'Angka di depan'; Terapkan 6 warna; Hapus warna merah; Tambah Dropdown Tahun.
+Tinggi (High)
+Sprint 1
+3
+Dashboard
+Integrasi Komponen Peta Indonesia
+Tambahkan peta persebaran wilayah pembinaan instansi di seluruh Indonesia pada halaman dashboard.
+Sedang (Medium)
+Sprint 2
+4
+Form Input
+Re-layout Hierarki Form Pembinaan
+Atur urutan: Kategori Instansi (Paling Atas) -> Nama Instansi -> Satker -> Tanggal -> Metode. Lebur Tempat & URL Rapat Daring.
+Tinggi (High)
+Sprint 1
+5
+Form Input
+Multi-Select Tim Pendamping Dinamis
+Implementasikan tombol '+ Tambah Anggota' untuk memilih narasumber/pendamping internal dari Data Master Pegawai.
+Tinggi (High)
+Sprint 1
+6
+Form Input
+Relokasi Catatan Hasil Pembinaan
+Ubah 'Integrasi' jadi 'Catatan Hasil Pembinaan' dan tempatkan dalam box khusus di pojok/samping form.
+Sedang (Medium)
+Sprint 2
+7
+Katalog Materi
+Opsi Visibilitas Publikasi vs Private
+Tambahkan toggle Publikasi/Private. Tampilkan notifikasi arahan hubungi narasumber jika materi Private diakses.
+Sedang (Medium)
+Sprint 2
+8
+Data Master
+Pembangunan Modul Data Master
+Buat CRUD Data Master Instansi, Master Kategori Instansi, dan Master Pegawai/Narasumber.
+Tinggi (High)
+Sprint 1
+9
+User & Profile
+User Profiling & Klasemen Narasumber
+Tambahkan foto profil di header & Pengaturan Akun; Buat komponen Klasemen Narasumber Pembinaan Terbanyak.
+Sedang (Medium)
+Sprint 2
+10
+Manajemen Tamu
+Sub-Menu Pencatatan Tamu Manual
+Buat form input Admin untuk pencatatan 'Tamu Kunjungan' dan 'Tamu Konsultasi'.
+Rendah (Low)
+Sprint 3
+
+Bab VIII: Daftar Hal yang Perlu Dikonfirmasi Lanjutan
+Beberapa poin teknis berikut memerlukan koordinasi dan konfirmasi lanjutan dengan pihak mentor atau tim terkait:
+8.1 Penyediaan Data Master Pegawai & Instansi
+Pengembang perlu meminta berkas data master resmi berisi daftar pegawai/narasumber beserta NIP, serta basis data instansi pemerintah yang valid untuk dimasukkan ke dalam database awal.
+8.2 Aset Shapefile / API Peta Indonesia
+Perlu mengonfirmasi format visualisasi Peta Indonesia yang diharapkan (apakah menggunakan pustaka library GeoJSON/Highcharts atau gambar peta interaktif sederhana).
+8.3 Katalog Template Laporan Resmi
+Pengembang perlu mengonfirmasi format berkas template laporan standar yang boleh diunduh oleh pengguna pada modul Katalog Laporan.
+Bab IX: Kesimpulan dan Implikasi Proyek
+9.1 Ringkasan Sesi Review
+Sesi tinjauan laporan proyek antara Naufal Hilmi Fathul Ihsan dan Mentor Sistem telah berjalan secara komprehensif, konstruktif, dan menghasilkan arahan teknis yang sangat jelas. Seluruh masukan mentor berfokus pada penyelarasan sistem dengan standar tata kelola birokrasi, peningkatan estetika visual laporan eksekutif, serta penyederhanaan alur kerja penginputan data.
+9.2 Implikasi Terhadap Masa Pengembangan (Durasi 6 Bulan)
+Dengan adanya spesifikasi perubahan yang terperinci ini, masa pengembangan aplikasi selama 6 bulan memiliki peta jalan (roadmap) yang terstruktur. Pengembang dapat langsung melakukan refactoring pada komponen antarmuka (UI) pada Sprint 1 sebelum melanjutkan ke tahap integrasi database dan logika backend.
+9.3 Penilaian Kinerja Magang
+Di akhir pertemuan, mentor telah memberikan penilaian kinerja 'Sangat Baik' pada portal magang institusi. Hal ini menjadi bukti apresiasi atas kualitas kerja, inisiatif, dan sikap profesional pengembang dalam merespons seluruh masukan mentor demi suksesnya pembangunan Sistem Pemantauan dan Evaluasi Pembinaan Srikandi.

@@ -1,0 +1,5 @@
+<?php
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+return new class extends Migration { public function up(): void { Schema::create('tamu_kunjungan', function(Blueprint $t){$t->id();$t->string('nama_tamu');$t->string('instansi_asal')->nullable();$t->string('kontak')->nullable();$t->date('tanggal_kunjungan');$t->string('tujuan');$t->string('bertemu_dengan')->nullable();$t->text('keterangan')->nullable();$t->foreignId('created_by')->constrained('users');$t->timestamps();}); Schema::create('tamu_konsultasi', function(Blueprint $t){$t->id();$t->string('nama_tamu');$t->string('instansi_asal')->nullable();$t->string('kontak')->nullable();$t->date('tanggal_konsultasi');$t->string('topik');$t->string('petugas')->nullable();$t->string('metode')->default('Tatap muka');$t->text('hasil')->nullable();$t->text('tindak_lanjut')->nullable();$t->foreignId('created_by')->constrained('users');$t->timestamps();}); } public function down(): void {Schema::dropIfExists('tamu_konsultasi');Schema::dropIfExists('tamu_kunjungan');} };
