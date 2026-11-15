@@ -1,5 +1,5 @@
 {
   "php": {
-    "extensions": ["ctype", "curl", "dom", "fileinfo", "filter", "gd", "hash", "mbstring", "openssl", "pcre", "pdo", "session", "tokenizer", "xml"]
+    "extensions": ["ctype", "curl", "dom", "fileinfo", "filter", "gd", "hash", "mbstring", "openssl", "pcre", "pdo", "session", "tokenizer", "xml", "zip"]
   }
 }
