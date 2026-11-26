@@ -1,4 +1,4 @@
-﻿# syntax=docker/dockerfile:1
+# syntax=docker/dockerfile:1
 FROM composer:2 AS vendor
 WORKDIR /app
 COPY composer.json composer.lock ./
@@ -33,5 +33,5 @@ RUN mkdir -p database storage/framework/cache storage/framework/sessions storage
     && touch database/database.sqlite \
     && chown -R www-data:www-data storage bootstrap/cache database
 
-EXPOSE 10000
+EXPOSE 80
 CMD ["sh", "-c", "php artisan migrate --force && apache2-foreground"]
